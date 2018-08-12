@@ -2,7 +2,7 @@ Following are the assumptions made while creating this project
 ---------------------------------------------------------------
 
 1. Input is supplied from a file called 'input.txt' which is in the same directory as the 'main.py' script. Please
-   relace the contents of the 'input.txt' file with your instructions.
+   replace the contents of the 'input.txt' file with your instructions.
 
 2. The output is 'appended' to a file 'output.txt'. Initially, it is an empty file (provided in the zip folder)
 
