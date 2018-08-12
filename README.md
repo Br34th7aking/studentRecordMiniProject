@@ -25,63 +25,83 @@ Below are few sample examples you can try out:
 #### Example 1
 
 **Input**
+
 insert abhijit raj oopd
+
 show
 
 **Output**
-Instruction \#1
+
+Instruction `#1`
 ***********************************************
-Instruction \#2
+Instruction `#2`
 ***********************************************
+
 List of all current students
 -------------------------------
+
 First Name: abhijit
+
 Last Name: raj
+
 Courses Taken: oopd
 
 
 #### Example 2
 
 **Input**
+
 insert abhijit raj oopd
+
 insert lightbulb ag ITP DSA Compilers
+
 maximum
 
 **Output**
-Instruction \#1
+
+Instruction `#1`
 ***********************************************
-Instruction \#2
+Instruction `#2`
 ***********************************************
-Instruction \#3
+Instruction `#3`
 ***********************************************
 Current Maximum Priority Student
 ---------------------------------------
 First Name: lightbulb
+
 Last Name: ag
+
 Courses Taken: ITP DSA Compilers
 
 
 #### Example 3
 
 **Input**
+
 insert abhijit raj oopd
+
 insert lightbulb holder ITP DSA Compilers
+
 insert abhinav raj NDA
+
 extract-max
 
 **Output**
-Instruction \#1
+
+Instruction `#1`
 ***********************************************
-Instruction \#2
+Instruction `#2`
 ***********************************************
-Instruction \#3
+Instruction `#3`
 ***********************************************
-Instruction \#4
+Instruction `#4`
 ***********************************************
 Current Maximum Priority Student
 ---------------------------------------
 First Name: lightbulb
+
 Last Name: holder
+
 Courses Taken: ITP DSA Compilers
 
 The above student record has now been extracted and removed from the database
