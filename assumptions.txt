@@ -1,0 +1,31 @@
+Following are the assumptions made while creating this project
+---------------------------------------------------------------
+
+1. Input is supplied from a file called 'input.txt' which is in the same directory as the 'main.py' script. Please
+   relace the contents of the 'input.txt' file with your instructions.
+
+2. The output is 'appended' to a file 'output.txt'. Initially, it is an empty file (provided in the zip folder)
+
+3. As the output is being sent to a file, I've assumed that it is sufficient to 'write' the result of functions
+'extract-max', and 'maximum' rather than returning a value from them.
+
+4. The output file shows the output of every instruction. But 'insert' and 'delete' do not produce an output.
+For example:
+a sequence of instructions: insert abhijit Raj oopd
+                            show
+
+will produce an output:
+
+Instruction #1
+***********************************************
+Instruction #2
+***********************************************
+List of all current students
+-------------------------------
+First Name: abhijit
+Last Name: Raj
+Courses Taken: oopd
+
+(Note: there is no output for Instruction #1)
+
+5. As the output file is opened in 'append+' format, all the instructions will produce outputs one below the other.

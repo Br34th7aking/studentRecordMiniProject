@@ -31,6 +31,9 @@ class StudentsRecords:
         self.maxHeap = [] # an empty list of students.
 
     def bubbleUp(self, i):
+        '''
+        this function maintains the heap property after an item is inserted in the heap.
+        '''
         if (i == 0):
             return  # no need to do anything at root
         parent = int((i - 1) / 2)
@@ -65,12 +68,12 @@ class StudentsRecords:
         '''
         takes in a student record, and adds it to the student database.
         '''
-        self.maxHeap.append(student)
+        self.maxHeap.append(student) # add new student to the end.
         self.bubbleUp(len(self.maxHeap) - 1) # maintain the heap
 
     def maximum(self):
         '''
-        returns the student record with maximum priority
+        prints the student record with maximum priority
         '''
         # if no students are in the records, print message that there is no maximum priority.
         if (len(self.maxHeap) == 0):
@@ -81,7 +84,7 @@ class StudentsRecords:
         info += '---------------------------------------\n'
         info += 'First Name: ' + student['firstname'] + '\n'
         info += 'Last Name: ' + student['lastname'] + '\n'
-        info += 'Courses Taken: ' + ''.join(student['courses']) + '\n\n'
+        info += 'Courses Taken: ' + ' '.join(student['courses']) + '\n\n'
         outputFile.write(info)
 
     def extractMax(self):
@@ -133,6 +136,8 @@ class StudentsRecords:
             details += 'Courses Taken: ' + ' '.join(student['courses']) + '\n\n'
             allStudents += details
         outputFile.write(allStudents)
+
+
 # main program follows below
 StudentsData = StudentsRecords()
 
@@ -141,7 +146,9 @@ outputFile = open('output.txt', 'a+')
 operations = inputFile.readlines()
 
 # outputFile.write('Hey, it works!')
-for op in operations:
+for index, op in enumerate(operations):
+    outputFile.write('Instruction #' + str(index + 1) + '\n') # to count from 1
+    outputFile.write('***********************************************\n')
     argList = op.split()
     if (argList[0].lower() == 'insert'):
         #insert the student record
