@@ -1,0 +1,4 @@
+insert Kajal Tiwari OOPD GA FOMB CBB
+show
+delete Kajal Kumari
+show
